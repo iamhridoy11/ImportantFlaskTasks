@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+{% block title %} Lucky {% endblock %}
+    <h1>Lucky number is: {{lucky_num}}</h1>
+
+    <!-- Putting conditional logic -->
+    {% if lucky_num == 3 %}
+        <h2>That's my lucky number </h2>
+    {% endif %}
+{% endblock %}
